@@ -1,0 +1,322 @@
+ <!doctype html>
+ <html lang="en">
+   <head>
+     <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <title>NutriGlow — Wellness Companion</title>
+     <meta name="description" content="Track calories, discover personalized meal plans, and scan ingredients with NutriGlow." />
+ 
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+ 
+     <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href="styles.css" />
+   </head>
+   <body class="min-h-screen bg-gradient-to-br from-pink-50 via-rose-50 to-orange-50 text-pink-900">
+     <nav class="bg-white/90 backdrop-blur-sm border-b border-pink-200 sticky top-0 z-50">
+       <div class="max-w-6xl mx-auto px-4 py-4">
+         <div class="flex items-center justify-between">
+           <div class="flex items-center gap-3">
+             <div class="w-10 h-10 bg-gradient-to-br from-pink-400 to-rose-400 rounded-xl flex items-center justify-center">
+               <span class="text-white text-lg">♥</span>
+             </div>
+             <div>
+               <a href="index.html" class="block">
+                 <h1 class="text-xl">NutriGlow</h1>
+                 <p class="text-sm text-pink-600">Your wellness companion</p>
+               </a>
+             </div>
+           </div>
+           <div class="hidden md:flex items-center gap-8">
+             <a href="#features" class="text-pink-700 hover:text-pink-900 transition-colors">Features</a>
+             <a href="#how-it-works" class="text-pink-700 hover:text-pink-900 transition-colors">How It Works</a>
+             <a href="#plans" class="text-pink-700 hover:text-pink-900 transition-colors">Diet Plans</a>
+             <a href="attributions.html" class="text-pink-700 hover:text-pink-900 transition-colors">Attributions</a>
+             <a href="guidelines.html" class="text-pink-700 hover:text-pink-900 transition-colors">Guidelines</a>
+             <button class="bg-pink-500 text-white px-6 py-2 rounded-lg hover:bg-pink-600 transition-colors">
+               Get Started
+             </button>
+           </div>
+         </div>
+       </div>
+     </nav>
+ 
+     <main>
+       <section class="py-20 px-4">
+         <div class="max-w-6xl mx-auto text-center">
+           <div class="mb-8">
+             <h1 class="text-4xl md:text-6xl mb-6">
+               Your Journey to <span class="bg-gradient-to-r from-pink-500 to-orange-400 bg-clip-text text-transparent">Wellness</span> Starts Here
+             </h1>
+             <p class="text-xl text-pink-700 mb-8 max-w-3xl mx-auto">
+               Track calories, discover personalized meal plans, and scan ingredients with our AI-powered wellness platform designed for a healthier, happier you.
+             </p>
+           </div>
+ 
+           <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+             <button class="bg-pink-500 text-white px-8 py-4 rounded-lg hover:bg-pink-600 transition-colors flex items-center gap-2">
+               <span>🚀</span>
+               Start Your Journey
+             </button>
+             <button data-action="set-demo" data-demo="calories" class="border-2 border-pink-300 text-pink-700 px-8 py-4 rounded-lg hover:bg-pink-50 transition-colors flex items-center gap-2">
+               <span>📱</span>
+               See Demo
+             </button>
+           </div>
+ 
+           <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+             <div class="bg-white/70 backdrop-blur-sm rounded-2xl p-6 border border-pink-200">
+               <div class="text-3xl text-pink-500 mb-2">10K+</div>
+               <div class="text-pink-700">Happy Users</div>
+             </div>
+             <div class="bg-white/70 backdrop-blur-sm rounded-2xl p-6 border border-pink-200">
+               <div class="text-3xl text-pink-500 mb-2">50K+</div>
+               <div class="text-pink-700">Meals Tracked</div>
+             </div>
+             <div class="bg-white/70 backdrop-blur-sm rounded-2xl p-6 border border-pink-200">
+               <div class="text-3xl text-pink-500 mb-2">1M+</div>
+               <div class="text-pink-700">Ingredients Scanned</div>
+             </div>
+           </div>
+         </div>
+       </section>
+ 
+       <section id="features" class="py-20 px-4 bg-white/50">
+         <div class="max-w-6xl mx-auto">
+           <div class="text-center mb-16">
+             <h2 class="text-3xl md:text-4xl mb-4">
+               Everything You Need for <span class="text-orange-500">Wellness Success</span>
+             </h2>
+             <p class="text-xl text-pink-600 max-w-2xl mx-auto">
+               Our comprehensive platform combines smart tracking, personalized guidance, and cutting-edge technology.
+             </p>
+           </div>
+ 
+           <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+             <div class="bg-gradient-to-br from-pink-50 to-rose-50 rounded-2xl p-8 border border-pink-200">
+               <div class="text-4xl mb-4">🎯</div>
+               <h3 class="text-xl mb-3">Smart Calorie Tracking</h3>
+               <p class="text-pink-700 mb-6">
+                 Effortlessly track your daily calorie intake with visual progress rings and intelligent food logging.
+               </p>
+               <button 
+                 data-action="set-demo" data-demo="calories"
+                 class="text-pink-600 hover:text-pink-800 transition-colors"
+               >
+                 Try Demo →
+               </button>
+             </div>
+ 
+             <div class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 border border-pink-200">
+               <div class="text-4xl mb-4">📚</div>
+               <h3 class="text-xl mb-3">Personalized Diet Plans</h3>
+               <p class="text-pink-700 mb-6">
+                 Discover meal plans tailored to your goals, preferences, and lifestyle for sustainable results.
+               </p>
+               <button 
+                 data-action="set-demo" data-demo="plans"
+                 class="text-pink-600 hover:text-pink-800 transition-colors"
+               >
+                 Explore Plans →
+               </button>
+             </div>
+ 
+             <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border border-pink-200">
+               <div class="text-4xl mb-4">📷</div>
+               <h3 class="text-xl mb-3">AI Ingredient Scanner</h3>
+               <p class="text-pink-700 mb-6">
+                 Instantly analyze ingredients with our AI-powered camera scanner for complete nutritional insights.
+               </p>
+               <button 
+                 data-action="set-demo" data-demo="scanner"
+                 class="text-pink-600 hover:text-pink-800 transition-colors"
+               >
+                 See Scanner →
+               </button>
+             </div>
+           </div>
+ 
+           <div class="bg-white rounded-2xl border border-pink-200 overflow-hidden" id="interactive-demo">
+             <div class="bg-gradient-to-r from-pink-100 to-rose-100 p-6 border-b border-pink-200">
+               <div class="flex items-center justify-between">
+                 <h3 class="text-xl">Interactive Demo</h3>
+                 <div class="flex gap-2">
+                   <button data-demo-control="calories"
+                     data-action="set-demo" data-demo="calories"
+                     class="px-4 py-2 rounded-lg transition-colors bg-pink-500 text-white">
+                     Calorie Tracker
+                   </button>
+                   <button data-demo-control="plans"
+                     data-action="set-demo" data-demo="plans"
+                     class="px-4 py-2 rounded-lg transition-colors bg-white/70 text-pink-700 hover:bg-white">
+                     Diet Plans
+                   </button>
+                   <button data-demo-control="scanner"
+                     data-action="set-demo" data-demo="scanner"
+                     class="px-4 py-2 rounded-lg transition-colors bg-white/70 text-pink-700 hover:bg-white">
+                     Scanner
+                   </button>
+                 </div>
+               </div>
+             </div>
+             <div class="p-8">
+               <div id="demo-calories" class="space-y-6">
+                 <div class="p-6 bg-gradient-to-br from-pink-50 to-rose-50 border-pink-200 border rounded-lg">
+                   <h2 class="text-xl mb-4">Today's Progress</h2>
+                   <div class="text-center">
+                     <div class="text-2xl">1247 / 2000</div>
+                     <div class="text-sm text-pink-600">calories</div>
+                   </div>
+                 </div>
+ 
+                 <div class="p-6 border rounded-lg bg-white">
+                   <h3 class="mb-4">Log Food</h3>
+                   <div class="flex flex-col md:flex-row gap-2">
+                     <input id="foodName" placeholder="Food name" class="flex-1 px-3 py-2 border border-pink-200 rounded" />
+                     <input id="foodCalories" placeholder="Calories" type="number" class="md:w-24 px-3 py-2 border border-pink-200 rounded" />
+                     <button id="addFoodButton" class="bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600">Add</button>
+                   </div>
+                   <div id="foodList" class="flex flex-wrap gap-2 mt-3"></div>
+                 </div>
+               </div>
+ 
+               <div id="demo-plans" class="space-y-6 hidden">
+                 <div class="text-center mb-2">
+                   <h2 class="text-2xl mb-2">Diet Plans</h2>
+                   <p class="text-pink-600">Choose your wellness journey</p>
+                 </div>
+                 <div data-plan="mediterranean" class="p-6 bg-gradient-to-r from-blue-100 to-cyan-100 border-pink-200 border rounded-lg cursor-pointer text-[13px]">
+                   <h3 class="text-lg mb-2">Mediterranean Delight</h3>
+                   <p class="text-pink-700">Heart-healthy coastal cuisine</p>
+                 </div>
+                 <div data-plan="plant" class="p-6 bg-gradient-to-r from-green-100 to-emerald-100 border-pink-200 border rounded-lg cursor-pointer">
+                   <h3 class="text-lg mb-2">Plant Power</h3>
+                   <p class="text-pink-700">Nutritious plant-based meals</p>
+                 </div>
+               </div>
+ 
+               <div id="demo-scanner" class="space-y-6 hidden">
+                 <div class="p-6 bg-gradient-to-br from-pink-50 to-rose-50 border-pink-200 border rounded-lg">
+                   <div class="text-center">
+                     <h2 class="text-xl mb-4">Ingredient Scanner</h2>
+                     <div id="scanArea" class="mx-auto w-64 h-64 bg-white rounded-2xl border-2 border-dashed border-pink-300 flex items-center justify-center mb-6">
+                       <div class="text-center">
+                         <div class="text-6xl text-pink-400 mb-2">📷</div>
+                         <p class="text-pink-600">Point camera at ingredient</p>
+                       </div>
+                     </div>
+                     <button id="scanButton" class="w-full bg-pink-500 text-white py-3 rounded-lg hover:bg-pink-600">
+                       Start Scan
+                     </button>
+                   </div>
+                 </div>
+                 <div class="p-6 border rounded-lg bg-white">
+                   <h3 class="mb-4">Recent Scans</h3>
+                   <div class="flex flex-wrap gap-2" id="recentScans">
+                     <span class="px-3 py-1 border border-pink-300 text-pink-700 rounded-full text-sm">🥑 Avocado</span>
+                     <span class="px-3 py-1 border border-pink-300 text-pink-700 rounded-full text-sm">🍅 Tomato</span>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
+ 
+       <section id="how-it-works" class="py-20 px-4">
+         <div class="max-w-6xl mx-auto">
+           <div class="text-center mb-16">
+             <h2 class="text-3xl md:text-4xl mb-4">How <span class="text-orange-500">NutriGlow</span> Works</h2>
+             <p class="text-xl text-pink-600 max-w-2xl mx-auto">Get started with your wellness journey in three simple steps.</p>
+           </div>
+           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+             <div class="text-center">
+               <div class="w-16 h-16 bg-gradient-to-br from-pink-400 to-rose-400 rounded-full flex items-center justify-center mx-auto mb-6">
+                 <span class="text-white text-2xl">1</span>
+               </div>
+               <h3 class="text-xl mb-4">Set Your Goals</h3>
+               <p class="text-pink-700">Tell us about your wellness goals, dietary preferences, and lifestyle to get personalized recommendations.</p>
+             </div>
+             <div class="text-center">
+               <div class="w-16 h-16 bg-gradient-to-br from-pink-400 to-rose-400 rounded-full flex items-center justify-center mx-auto mb-6">
+                 <span class="text-white text-2xl">2</span>
+               </div>
+               <h3 class="text-xl mb-4">Track Daily</h3>
+               <p class="text-pink-700">Log your meals, scan ingredients, and monitor your progress with our intuitive tracking tools.</p>
+             </div>
+             <div class="text-center">
+               <div class="w-16 h-16 bg-gradient-to-br from-pink-400 to-rose-400 rounded-full flex items-center justify-center mx-auto mb-6">
+                 <span class="text-white text-2xl">3</span>
+               </div>
+               <h3 class="text-xl mb-4">Achieve Success</h3>
+               <p class="text-pink-700">Watch your health improve as you build sustainable habits with our guided nutrition plans.</p>
+             </div>
+           </div>
+         </div>
+       </section>
+ 
+       <section class="py-20 px-4 bg-gradient-to-r from-pink-500 via-rose-500 to-orange-400">
+         <div class="max-w-4xl mx-auto text-center">
+           <h2 class="text-3xl md:text-4xl text-white mb-6">Ready to Start Your Wellness Journey?</h2>
+           <p class="text-xl text-pink-100 mb-8 max-w-2xl mx-auto">Join thousands of users who have transformed their health with NutriGlow's personalized approach to nutrition.</p>
+           <div class="flex flex-col sm:flex-row gap-4 justify-center">
+             <button class="bg-white text-pink-600 px-8 py-4 rounded-lg hover:bg-pink-50 transition-colors">Start Free Trial</button>
+             <button class="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white/10 transition-colors">Learn More</button>
+           </div>
+         </div>
+       </section>
+     </main>
+ 
+     <footer class="bg-white border-t border-pink-200">
+       <div class="max-w-6xl mx-auto px-4 py-12">
+         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+           <div>
+             <div class="flex items-center gap-3 mb-4">
+               <div class="w-8 h-8 bg-gradient-to-br from-pink-400 to-rose-400 rounded-lg flex items-center justify-center">
+                 <span class="text-white">♥</span>
+               </div>
+               <span class="text-lg">NutriGlow</span>
+             </div>
+             <p class="text-pink-600 mb-4">Your wellness companion for a healthier, happier life.</p>
+             <p class="text-sm text-pink-500">© <span id="year"></span> NutriGlow. All rights reserved.</p>
+           </div>
+ 
+           <div>
+             <h4 class="mb-4">Features</h4>
+             <ul class="space-y-2 text-pink-600">
+               <li><a href="#features" class="hover:text-pink-800 transition-colors">Calorie Tracking</a></li>
+               <li><a href="#interactive-demo" class="hover:text-pink-800 transition-colors">Diet Plans</a></li>
+               <li><a href="#interactive-demo" class="hover:text-pink-800 transition-colors">Ingredient Scanner</a></li>
+               <li><a href="#how-it-works" class="hover:text-pink-800 transition-colors">Progress Analytics</a></li>
+             </ul>
+           </div>
+ 
+           <div>
+             <h4 class="mb-4">Support</h4>
+             <ul class="space-y-2 text-pink-600">
+               <li><a href="/attributions.html" class="hover:text-pink-800 transition-colors">Attributions</a></li>
+               <li><a href="/guidelines.html" class="hover:text-pink-800 transition-colors">Guidelines</a></li>
+               <li><a href="#" class="hover:text-pink-800 transition-colors">Privacy Policy</a></li>
+               <li><a href="#" class="hover:text-pink-800 transition-colors">Terms of Service</a></li>
+             </ul>
+           </div>
+ 
+           <div>
+             <h4 class="mb-4">Connect</h4>
+             <ul class="space-y-2 text-pink-600">
+               <li><a href="#" class="hover:text-pink-800 transition-colors">Newsletter</a></li>
+               <li><a href="#" class="hover:text-pink-800 transition-colors">Blog</a></li>
+               <li><a href="#" class="hover:text-pink-800 transition-colors">Community</a></li>
+               <li><a href="#" class="hover:text-pink-800 transition-colors">Social Media</a></li>
+             </ul>
+           </div>
+         </div>
+       </div>
+     </footer>
+ 
+     <script src="script.js"></script>
+   </body>
+ </html>
+
+
